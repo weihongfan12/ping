@@ -37,3 +37,7 @@ def ping_test():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+    from flask_cors import CORS  # 安装：pip install flask-cors
+
+app = Flask(__name__)
+CORS(app)  # 允许所有域名跨域访问
