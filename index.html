@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP测速工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 IP延迟测速工具</h1>
+        <textarea id="ipList" placeholder="请输入IP列表，每行一个..."></textarea>
+        <button id="startTest">开始测试</button>
+        <div id="results">
+            <table>
+                <thead>
+                    <tr>
+                        <th>IP地址</th>
+                        <th>状态</th>
+                        <th>平均延迟</th>
+                        <th>丢包率</th>
+                    </tr>
+                </thead>
+                <tbody id="resultTable">
+                    <!-- 结果动态填充 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
